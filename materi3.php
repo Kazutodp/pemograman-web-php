@@ -4,12 +4,13 @@
 </form>
 
 <?php
-if($isset($_POST["angka"])) {
+if(isset($_POST["angka"])) {
     $newangka = $_POST["angka"];
-    f($newangka %2 ==0) {
-        echo "Genap"
-    else
-        echo "ganjil"
+    if($newangka % 2 ==0 ) {
+        echo "Genap";
+    } else {
+        echo "ganjil";
     }
-}
+        
+    }
 ?>
