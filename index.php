@@ -1,49 +1,13 @@
 <?php
-
-$nama = "abdul";
-$umur = 20;
-$tinggi = 170.5;
-$menikah = true;
-$hobi = ["membaca", "bermain gitar", "bermain gitar"];
-
-echo "nama saya $nama, umur saya $umur, tinggi saya $tinggi, status saya $menikah, hobi saya $hobi[0],  $hobi[1]";
-
-echo "<br><br>==========================<br><br>";
-
-//operators
-$nilai1 = 5;
-$nilai2 = 8;
-$nilai3 = 15;
-$nilai4 = 20;
-$nilai5 = 25;
-
-$hasil = $nilai1 + $nilai2 - $nilai3 * $nilai4 /$nilai5;
-
-echo "hasil dari $nilai1 + $nilai2 - $nilai3 * $nilai4 /$nilai5 adalah $hasil";
-
-echo "<br><br>==========================<br><br>";
-
-//penjumlahan
-$hasil = $nilai2 + $nilai4;
-echo "hasil dari $nilai2 + $nilai4 adalah $hasil";
-
-
-echo "<br><br>========================<br><br>";
-
-//percabangan
-$nilai = 70;
-
-if ($nilai >= 85) {
-    echo "Grade: A (sangat baik)";
-} elseif ($nilai >=70) {
-    echo "Grade: B (cukup baik)";
-} elseif ($nilai >=50) {
-    echo "Grade: C (perlu belajar lagi)";
-} elseif ($nilai >=30) {
-    echo "Grade: D (ulang matkul)";
-} else {
-    echo "Grade: E ";
-}
-
+    echo "<br><br><a href='materi1.php'>Materi 1 : if dan Else</a>";
+    echo "<br><br><a href='materi2.php'>Materi 2 : Looping</a>";
+    echo "<br><br><a href='materi3.php'>Materi 3</a>";
+    echo "<br><br><a href='materi4.php'>Materi 4 </a>";
+    echo "<br><br><a href='materi5.php'>Materi 5</a>";
+    echo "<br><br><a href='materi6.php'>Materi 6</a>";
+    echo "<br><br><a href='materi7.php'>Materi 7</a>";
+    echo "<br><br><a href='materi8.php'>Materi 8</a>";
+    echo "<br><br><a href='materi19.php'>Materi 9</a>";
+    echo "<br><br><a href='materi110php'>Materi 10</a>";
 
 ?>
