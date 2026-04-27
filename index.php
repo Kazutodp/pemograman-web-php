@@ -1,7 +1,7 @@
 <?php
     echo "<br><br><a href='materi1.php'>Materi 1 : if dan Else</a>";
     echo "<br><br><a href='materi2.php'>Materi 2 : Looping</a>";
-    echo "<br><br><a href='materi3.php'>Materi 3</a>";
+    echo "<br><br><a href='materi3.php'>Materi 3 : function</a>";
     echo "<br><br><a href='materi4.php'>Materi 4 </a>";
     echo "<br><br><a href='materi5.php'>Materi 5</a>";
     echo "<br><br><a href='materi6.php'>Materi 6</a>";

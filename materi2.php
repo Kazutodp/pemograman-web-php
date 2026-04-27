@@ -10,5 +10,13 @@ if(isset($_POST["angka"])) {
         echo "ini angka ke $i <br>";
     }
 }
+if(isset($_POST["angka"])) {
+    $data = $_POST["angka"];
+    if($data % 2 ==0 ) {
+        echo "Genap";
+    } else {
+        echo "ganjil";
+    }
+    }
 
 ?>
