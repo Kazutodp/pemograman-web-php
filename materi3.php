@@ -44,6 +44,17 @@ echo "hasil dari 10 - 30 adalah ".pengurangan (10,30);
 
 echo "<br><br>==========================<br><br>";
 
+function login($username, $password)
+{
+    $usernamebah = "admin";
+    $passwordbah =  "12345";
+    if ($username == $usernamebah && $passwordbah) {
+        return true;
+    } else {
+        return "login gagal";
+    }
+}
+
 ?>
 
 <form method = "POST">
@@ -63,3 +74,21 @@ echo "<br><br>==========================<br><br>";
 
 ?>
 
+<form method = "POST";>
+    <label for="username">username</label>
+    <input type="text" name ="username">
+    <label for="password">password</label>
+    <input type="password" name="password">
+    <input type="submit" name="login" value= "login"></input>
+</form>
+
+<?php
+if(isset($_POST["login"])) {
+    $usernamenew = $_POST['username'];
+    $passwordnew = $_POST['password'];
+    if (login($usernamenew, $passwordnew)){
+        echo "login berhasil";
+    } else {
+        echo "login gagal";
+    }
+}
