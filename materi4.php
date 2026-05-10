@@ -48,9 +48,42 @@ if (isset($_POST['kirim'])) {
             echo "Data gagal dihapus";
         }
     }
+    
     ?> 
 </table>
 
+<?php
+if (isset($GET['edit'])){
+    $ID = $_GET["edit"];
+    $sql = "SELECT * FROM users WHERE id = 'id'";
+    $query = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($query);
+    echo "<form method = 'POST'>;
+    username : <input type = 'text' name= 'username' value ='{$row['username']}'>;
+    password : <input type = 'password' name= 'password' value ='{$row['password']}'>;
+    nama : <input type = 'text' name= 'nama' value ='{$row['nama']}'>;
+    email : <input type = 'email' name= 'email' value ='{$row['email']}'>;
+    <input type='submit' value ='edit data' nama='edit'>;
+    </form>";
+}
+
+if (isset($_POST['edit'])) {
+    $ID = $_POST['id'];
+    $password = $_POST['password'];
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+
+    $sql = "UPDATE users SET username = '$username', password = '$password', nama = '$nama', email = '$email' WHERE id = '$ID'";
+    $query = mysqli_query($conn, $sql);
+    
+    if ($query) {
+        echo "data berhasil diupdate";
+    } else {
+        echo "data gagal diudpate";
+    }
+}
+
+?>
 
 <form method = "POST">
     Username : <input type="text" name="username"><br><br>
