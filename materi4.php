@@ -53,9 +53,9 @@ if (isset($_POST['kirim'])) {
 </table>
 
 <?php
-if (isset($GET['edit'])){
+if (isset($_GET['edit'])){
     $ID = $_GET["edit"];
-    $sql = "SELECT * FROM users WHERE id = 'id'";
+    $sql = "SELECT * FROM users WHERE id = '$ID'";
     $query = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($query);
     echo "<form method = 'POST'>;
@@ -69,6 +69,7 @@ if (isset($GET['edit'])){
 
 if (isset($_POST['edit'])) {
     $ID = $_POST['id'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
     $nama = $_POST['nama'];
     $email = $_POST['email'];
